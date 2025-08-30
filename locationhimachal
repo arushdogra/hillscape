@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMACHAL PRADESH</title>
+     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+          background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+       
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+            min-height: calc(100vh - 60px);
+        }
+
+        
+        .flip-card {
+            width: 250px;
+            height: 350px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flip-card-front {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+        }
+
+        .flip-card-back {
+            background: linear-gradient(135deg, #f5a623, #f76b1c);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .card-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        .card-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HILLSCAPE</div>
+          <div class="icon">
+                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6">
+                            <path
+                                d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path
+                                d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </div>
+    </nav>
+
+    <div class="card-container">
+        <!-- 1st-->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://www.clubmahindra.com/blog/media/section_images/shuttersto-026b0fa609daf35.jpg" class="card-image">
+                    <h3 class="card-title">Shimla</h3>
+                    <p class="card-desc">Into the Nature</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/09/57/16/1000_F_409571615_KEsl0FOjDX23T805YsCUVqJyhjy6iRJt.jpg" class="card-image">
+                    <h3 class="card-title">Did You Know?</h3>
+                    <p class="card-desc">One theory suggests that the name "Shimla" was derived from Shyamalaya, meaning 'blue house', a solitary house made of blue slate on Jakhu Hill, built by a fakir.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd  -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.As_4lYMcQ2tq4lA1r-svBQHaEg?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-image">
+                    <h3 class="card-title">Manali</h3>
+                    <p class="card-desc">The progenitor of humanity</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://static.toiimg.com/photo/67454479/Manali.jpg?width=748&resize=4" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">Manali is named after Manu, the progenitor of humanity in Hinduism. The name Manali is regarded as the derivative of Manu-Alaya. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://mediaim.expedia.com/destination/1/88fe721a9c344ab1be735a0aff0442c0.jpg" class="card-image">
+                    <h3 class="card-title">Dharamshala</h3>
+                    <p class="card-desc">Tibetan culture</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://th.bing.com/th/id/R.ce2c4b27c9f437c1d6fa70c850db234d?rik=jwSM3kfD8B%2b2zw&riu=http%3a%2f%2fwww.gozocabs.com%2fblog%2fwp-content%2fuploads%2f2016%2f11%2fdhr1.jpg&ehk=1sX52PdZOhOC%2bNP9EqVtoUkQHketgIAWmPyuft5f7RE%3d&risl=&pid=ImgRaw&r=0" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">Dharamshala is a Hindi word derived from Sanskrit that is a compound of the words dharma and shālā, literally 'House or place of Dharma'.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.pipRkrif4z3UBO2fItobhwHaGB?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-image">
+                    <h3 class="card-title">Kullu</h3>
+                    <p class="card-desc">Into lush green Valley</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/04/Tirthan-Valley.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">Kullu Valley is a broad open valley formed by the Beas River between Manali and Larji. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--5th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://thumbs.dreamstime.com/b/mesmerizing-view-en-route-to-rohtang-pass-leh-manali-highway-himachal-pradesh-india-202876897.jpg" class="card-image">
+                    <h3 class="card-title">Rohtang Pass</h3>
+                    <p class="card-desc">Stunning Snow and Views</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://jannattravelguru.com/wp-content/uploads/2023/03/Rohtang-pass.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">Rohtang Pass is a high mountain pass located on the eastern end of the Pir Panjal Range in the Himalayas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
