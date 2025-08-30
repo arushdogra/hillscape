@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HOME</title>
+</head>
+
+<body>
+    <!-- HOME -->
+    <div id="home" class="mainpg">
+        <div class="nav">
+            <div class="logo">HILLSCAPE</div>
+            <div class="buttonnav">
+                <a class="button" href="index.html">HOME</a>
+                <a class="button" href="#about">ABOUT</a>
+                <a class="button" href="#explore">SEARCH</a>
+
+            </div>
+        </div>
+        <div class="content">
+            <a class="explore" href="#explore"> EXPLORE</a>
+            <h1 class="h1">DISCOVER MORE,<br>TRAVEL BETTER</h1>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+            </svg>
+        </div>
+    </div>
+
+
+    <!--ABOUT  -->
+    <div id="about" class="mainpg">
+        <div class="nav">
+            <div class="logo">
+            HILLSCAPE
+            </div>
+            <div class="icon">
+                <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="size-6">
+                        <path
+                            d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                        <path
+                            d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="aboutcontent">
+            <div class="boxcontainer">
+                <div class="box 1">
+                    <h2>🌄Our Story</h2>
+                    <br>
+                    <p>Hillscape was born from a love for mountains and the thrill of exploring untouched landscapes. We
+                        aim
+                        to
+                        bring travelers closer to the hidden gems of North India.</p>
+                </div>
+                <div class="box 2">
+                    <h2>🧭What We Offer</h2>
+                    <br>
+                    <p>From curated travel guides to breathtaking photography, Hillscape provides inspiration and
+                        practical
+                        tips
+                        for your next mountain adventure.</p>
+                </div>
+                <div class="box 3">
+                    <h2>🌿Why Choose Us</h2>
+                    <br>
+                    <p> We focus on authentic experiences, eco-friendly travel, and stories that connect you to local
+                        culture,
+                        nature, and communities.</p>
+                </div>
+                <div class="box 4">
+                    <h2>👉Our Vision</h2>
+                    <br>
+                    <p>To inspire explorers to climb higher, wander further, and discover the beauty of the hills while
+                        preserving
+                        them for generations to come.</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#explore" class="btn">Ready To Explore</a>
+            </div>
+        </div>
+
+
+        <!-- EXPLORE -->
+        <div id="explore" class="mainpg">
+            <div class="nav">
+                <div class="logo">
+                    HILLSCAPE
+                </div>
+                <div class="icon">
+                    <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6">
+                            <path
+                                d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path
+                                d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="wrap">
+                    <input type="radio" name="slide" id="one" checked>
+                    <input type="radio" name="slide" id="two">
+                    <input type="radio" name="slide" id="three">
+                    <input type="radio" name="slide" id="four">
+                    <input type="radio" name="slide" id="five">
+                    <div class="img img1">
+                        <div class="img-container">
+                            <img src="LADAKH.png" alt="img1">
+                        </div>
+                        <a href="ladakh.html" class="btn">Explore Ladakh</a>
+                    </div>
+                    <div class="img img2">
+                        <div class="img-container">
+                            <img src="HIMACHAL.png" alt="img2">
+                        </div>
+                        <a href="himachal.html" class="btn">Explore Himachal Pradesh</a>
+                    </div>
+                    <div class="img img3">
+                        <div class="img-container"> <img src="UTTARAKHAND.png" alt="img3">
+                        </div>
+                        <a href="uttarakhand.html" class="btn">Explore Uttarkhand</a>
+                    </div>
+                    <div class="img img4">
+                        <div class="img-container"><img src="SIKKIM.png" alt="img4">
+                        </div>
+                        <a href="sikkim.html" class="btn">Explore Sikkim</a>
+                    </div>
+                    <div class="img img5">
+                        <div class="img-container"><img src="JAMMU.png" alt="img5">
+                        </div>
+                        <a href="kashmir.html" class="btn">Explore Jammu and Kashmir</a>
+                    </div>
+                    <div class="sliders">
+                        <label for="one"></label>
+                        <label for="two"></label>
+                        <label for="three"></label>
+                        <label for="four"></label>
+                        <label for="five"></label>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+</body>
+
+</html>
