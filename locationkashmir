@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&K</title>
+     <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+           background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+       
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+            min-height: calc(100vh - 60px);
+        }
+
+        
+        .flip-card {
+            width: 250px;
+            height: 350px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flip-card-front {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+        }
+
+        .flip-card-back {
+            background: linear-gradient(135deg, #f5a623, #f76b1c);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .card-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        .card-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HILLSCAPE</div>
+          <div class="icon">
+                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6">
+                            <path
+                                d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path
+                                d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </div>
+    </nav>
+
+    <div class="card-container">
+        <!-- 1st-->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://lp-cms-production.imgix.net/2019-06/384e10f39ebc6fab9b991467541ce8ed-dal-lake.jpg" class="card-image">
+                    <h3 class="card-title">Srinagar</h3>
+                    <p class="card-desc">Venice of East</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://www.tripsavvy.com/thmb/Nrhf1_k96t_SphJsN4XAcoNDTvc=/2121x1414/filters:fill(auto,1)/GettyImages-584374227-58ac1d273df78c345b154d7a.jpg" class="card-image">
+                    <h3 class="card-title">Did You Know?</h3>
+                    <p class="card-desc">It is the largest city and summer capital of Jammu and Kashmir, which is an Indian-administered union territory. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd  -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://hblimg.mmtcdn.com/content/hubble/img/gulmarg/mmt/destination/m_Gulmarg_activity_mountains_l_460_690.jpg" class="card-image">
+                    <h3 class="card-title">Gulmarg</h3>
+                    <p class="card-desc">Switzerland of India</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://www.orangesmile.com/extreme/img/main/gulmarg-gondola_1.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">According to CNN, Gulmarg is the "heartland of winter sports in India" and was rated as Asia's seventh best ski destination. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://kashmirlife.net/wp-content/uploads/2023/06/BVP1.jpg" class="card-image">
+                    <h3 class="card-title">Pahalgam</h3>
+                    <p class="card-desc">Village of Shepherds</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://indiano.travel/wp-content/uploads/2022/09/View-of-Betab-Valley-in-winter-season-Pahalgam-Kashmir-India.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc"> Pahalgam, nestled in the breathtaking Kashmir Valley, is renowned for its stunning landscapes, lush meadows, and serene rivers, making it a must-visit destination for nature enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://www.luxurytrailsofindia.com/wp-content/uploads/2016/10/Sonamarg-Jammu-Kashmir-India.jpg" class="card-image">
+                    <h3 class="card-title">Sonamarg</h3>
+                    <p class="card-desc">Meadow of Gold</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://i.redd.it/jfm9r8vmkkd71.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc"> Sonamarg had historical significance as a gateway on the ancient Silk Road, connecting Kashmir with Tibet </p>
+                </div>
+            </div>
+        </div>
+
+        <!--5th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://www.gosahin.com/go/p/a/1515868078_leh-palace1.jpg" class="card-image">
+                    <h3 class="card-title"> Leh </h3>
+                    <p class="card-desc">Insights of History</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://adventourist.in/travel-blog/wp-content/uploads/2021/01/leh-palace-ladakh.jpeg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">A historical palace offering panoramic views of Leh and insight into the region's history.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
