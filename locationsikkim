@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>SIKKIM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+           background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+       
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+            min-height: calc(100vh - 60px);
+        }
+
+        
+        .flip-card {
+            width: 250px;
+            height: 350px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flip-card-front {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+        }
+
+        .flip-card-back {
+            background: linear-gradient(135deg, #f5a623, #f76b1c);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .card-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        .card-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HILLSCAPE</div>
+         <div class="icon">
+                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6">
+                            <path
+                                d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path
+                                d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </div>
+    </nav>
+
+    <div class="card-container">
+        <!-- 1st-->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://www.adotrip.com/public/images/city/master_images/5e3d0c5e61d04-Gangtok_Sightseeing.jpg" class="card-image">
+                    <h3 class="card-title">Gangtok</h3>
+                    <p class="card-desc">City in Clouds</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://th.bing.com/th/id/R.aba32bd185b3abed0c9c3382bf6a895a?rik=mE4PbpfyvzdSow&riu=http%3a%2f%2fwww.holidayrentals.co.in%2fblog%2fwp-content%2fuploads%2f2015%2f05%2fgangtokk.jpg&ehk=cOfXz0nGSArDOpALmY4tjutCiooIiZv9SBcFB%2fYUuJ0%3d&risl=&pid=ImgRaw&r=0" class="card-image">
+                    <h3 class="card-title">Did You Know?</h3>
+                    <p class="card-desc">Gangtok is the main base for Sikkim tourism. Summer and spring seasons are the most popular tourist seasons. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd  -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://nomadicweekends.com/blog/wp-content/uploads/2019/03/Road-to-Nathula-Pass.jpg" class="card-image">
+                    <h3 class="card-title">Nathula Pass</h3>
+                    <p class="card-desc">The Roadway</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://www.oyorooms.com/blog/wp-content/uploads/2016/04/Nathula-Pass.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">The name "Nathu La" is traditionally interpreted as "the whistling pass", or more commonly as the "listening ears pass"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://www.adotrip.com/public/images/areas/5c3f0ab252ca8-Tsomgo%20Lake%20Sightseeing.jpg" class="card-image">
+                    <h3 class="card-title">Tsomgo Lake</h3>
+                    <p class="card-desc">The Icy Path </p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://media.tripinvites.com/places/gangtok/tsomgo-lake/tsomgo-lake-featured.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">Tsomgo Lake, also known as Tsongmo Lake or Changgu Lake, is a glacial lake in Changu in the Gangtok district of the Indian state of Sikkim.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://nomadicweekends.com/blog/wp-content/uploads/2019/02/30127578_1691986214228436_4746460975484370944_o-1.jpg" class="card-image">
+                    <h3 class="card-title">Yumthang Valley</h3>
+                    <p class="card-desc">Valley of Flowers</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://1001things.org/wp-content/uploads/2019/08/Yumthang-Valley9.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc"> The Yumthang Valley or Sikkim Valley of Flowers sanctuary, is a nature sanctuary with river, hot springs, yaks and grazing pasture on rolling meadows surrounded by the Himalayan mountains </p>
+                </div>
+            </div>
+        </div>
+
+        <!--5th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/buddha-park-rabangla-sikkim-rudra-narayan-mitra.jpg" class="card-image">
+                    <h3 class="card-title">Buddha Park </h3>
+                    <p class="card-desc">Silent Place</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://th.bing.com/th/id/R.f51f47d9f11e14cfa48f35233896e173?rik=EETHJ5yQkwI0nA&riu=http%3a%2f%2fadventuresindbad.com%2fwp-content%2fuploads%2f2019%2f04%2fLogoLicious_20190410_221400.png&ehk=4xbPiH9CfdMIiqYozRLVSeNrZf0IcUY%2b8gN6h5YjlfQ%3d&risl=&pid=ImgRaw&r=0" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">It was constructed between 2006 and 2013, and features a 130-foot-high (40 m) statue of the Buddha, erected to mark the 2550th anniversary of the birth of Gautama Buddha.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
