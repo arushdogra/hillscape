@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>LADAKH</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+           background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+       
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+            min-height: calc(100vh - 60px);
+        }
+
+        
+        .flip-card {
+            width: 250px;
+            height: 350px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .flip-card-front {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+        }
+
+        .flip-card-back {
+            background: linear-gradient(135deg, #f5a623, #f76b1c);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .card-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid white;
+        }
+
+        .card-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">HILLSCAPE</div>
+           <div class="icon">
+                    <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-6">
+                            <path
+                                d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+                            <path
+                                d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+                        </svg>
+                    </a>
+                </div>
+    </nav>
+
+    <div class="card-container">
+        <!-- 1st-->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://i.natgeofe.com/n/6f565ac6-caaa-4df9-ab1b-57d73e56e4af/81121.jpg" class="card-image">
+                    <h3 class="card-title">Pangong Lake</h3>
+                    <p class="card-desc">Deep into water</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://th.bing.com/th/id/R.8fc280e0f0cbaec5dd2308b4b8b0d008?rik=%2fc8RrwhsDbP7bA&riu=http%3a%2f%2fwww.holidify.com%2fimages%2fcompressed%2f2999.jpg&ehk=1Z5iS1f4fwMYZ8Y6wLVK5cqGaoBpsx3YSPk%2fcQdO%2f9E%3d&risl=&pid=ImgRaw&r=0" class="card-image">
+                    <h3 class="card-title">Did You Know?</h3>
+                    <p class="card-desc">A stunning high-altitude lake known for its striking blue waters and breathtaking views. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2nd  -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.ayyWqEcm-fazXbvz5r9fSQHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-image">
+                    <h3 class="card-title">Khardung La Pass</h3>
+                    <p class="card-desc">High on Roads</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://2.bp.blogspot.com/-toO_ce80qJY/VAGP36tNA1I/AAAAAAAAdzE/726b4kZmB8I/s1600/North%2BPullu.JPG" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">One of the highest motorable roads in the world, perfect for adventure seekers. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3rd -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://th.bing.com/th/id/R.c9e590b85db5c7343d34878cb3c5d744?rik=0e%2fHub87JybjxA&riu=http%3a%2f%2fwww.thenorthlines.com%2fwp-content%2fuploads%2f2016%2f06%2f1753405-1753404_ladakh-with-nubra-valley.jpg&ehk=JV%2fsmTzbw0WAYzMlW79eEsVl0BTc3PK8E2YFA8QjVsA%3d&risl=&pid=ImgRaw&r=0" class="card-image">
+                    <h3 class="card-title">Nubra Valley</h3>
+                    <p class="card-desc">Dunes and Camels</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://www.tripsavvy.com/thmb/CRSobtXXeeui3Px6mf2G0Y-JaZI=/2119x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-488194509-1029ed05f77e4b81863a344e28b2791f.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc"> Famous for its sand dunes and double-humped camels, offering a unique landscape.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://www.transformingtravels.com/wp-content/uploads/2021/10/Tso-Moriri-1920x960.jpg" class="card-image">
+                    <h3 class="card-title">Tso Moriri Lake</h3>
+                    <p class="card-desc">Mountains and Nature</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://himachalwatcher.com/wp-content/uploads/2014/04/Tso-Moriri-lake.jpg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc"> A beautiful high-altitude lake surrounded by mountains, ideal for nature lovers. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--5th -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="https://www.gosahin.com/go/p/a/1515868078_leh-palace1.jpg" class="card-image">
+                    <h3 class="card-title"> Leh Palace</h3>
+                    <p class="card-desc">Insights of History</p>
+                </div>
+                <div class="flip-card-back">
+                    <img src="https://adventourist.in/travel-blog/wp-content/uploads/2021/01/leh-palace-ladakh.jpeg" class="card-image">
+                    <h3 class="card-title">Did you know?</h3>
+                    <p class="card-desc">A historical palace offering panoramic views of Leh and insight into the region's history.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
